@@ -87,6 +87,7 @@
     border: 2px solid #e8e8e8;
     border-radius: 8px;
     transition: 200ms ease-in-out;
+    cursor: pointer;
 }
 
 .option-card:hover {

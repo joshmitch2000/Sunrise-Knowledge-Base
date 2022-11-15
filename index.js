@@ -15,12 +15,11 @@ window.onload = () => {
     imageWrapper.classList.add("img-wrapper");
     let powerLogo = document.createElement("img");
     powerLogo.classList.add("power-logo");
+    powerLogo.setAttribute("src", "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Power_icon_%28the_Noun_Project_35084%29.svg/1024px-Power_icon_%28the_Noun_Project_35084%29.svg.png");
 
     imageWrapper.appendChild(powerLogo);
     
     card1.appendChild(imageWrapper);
-    card2.appendChild(imageWrapper);
-    card3.appendChild(imageWrapper);
 
     startOptions.appendChild(card1);
     startOptions.appendChild(card2);
