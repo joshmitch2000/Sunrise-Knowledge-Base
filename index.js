@@ -1,4 +1,4 @@
-document.getElementsByName("body")[0].addEventListener("load", () => {
+document.getElementsByTagName("body")[0].addEventListener("load", () => {
     let pageCont = document.getElementsByClassName("page-container");
     
     let startOptions = document.createElement("section");
@@ -19,3 +19,4 @@ document.getElementsByName("body")[0].addEventListener("load", () => {
 
     pageCont[0].appendChild(startOptions);
 });
+
