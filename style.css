@@ -100,6 +100,10 @@
     padding-top: 10px;
 }
 
+.option-card:nth-child(3) {
+    padding-top: 10px;
+}
+
 .img-wrapper {
     height: 100%;
 }
@@ -113,5 +117,5 @@
 }
 
 .rand-logo {
-    height: 45%;
+    height: 40%;
 }
