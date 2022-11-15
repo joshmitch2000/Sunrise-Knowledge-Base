@@ -6,10 +6,16 @@ window.onload = () => {
 
     let card1 = document.createElement("div")
     card1.classList.add("option-card");
+    card1.addEventListener('click', () => {
+        window.open("https://sunriseict-helpdesk.groovehq.com/help/new-staff-ict-guide", "_blank").focus();
+    });
     let card2 = document.createElement("div");
-    card2.classList.add("option-card")
+    card2.classList.add("option-card");
+    card2.addEventListener('click', () => {
+        window.location.href = "mailto:helpdesk@sunrise.sa.edu.au";
+    });
     let card3 = document.createElement("div");
-    card3.classList.add("option-card")
+    card3.classList.add("option-card");
 
     // card1 contents
     let imgWrap1 = document.createElement("div");
@@ -25,7 +31,7 @@ window.onload = () => {
 
     let para1 = document.createElement("p");
     para1.classList.add("card-text");
-    para1.innerText = "Are you new to Sunrise? Click here for a helpful article."
+    para1.innerText = "Are you new to Sunrise? Click here for a helpful article.";
 
     imgWrap1.appendChild(powerLogo);
     card1.appendChild(imgWrap1);
@@ -40,6 +46,14 @@ window.onload = () => {
     let emailLogo = document.createElement("img");
     emailLogo.classList.add("logo");
     emailLogo.setAttribute("src", "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Mail_%28iOS%29.svg/2048px-Mail_%28iOS%29.svg.png");
+
+    let title2 = document.createElement("h2");
+    title2.classList.add("card-title");
+    title2.innerText = "Get Support";
+
+    let para2 = document.createElement("p");
+    para2.classList.add("card-text");
+    para2.innerText = "Need further support? Click here to email the ICT Helpdesk.";
 
     imgWrap2.appendChild(emailLogo);
     card2.appendChild(imgWrap2);

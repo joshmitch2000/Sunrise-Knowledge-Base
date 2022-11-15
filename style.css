@@ -86,6 +86,7 @@
     height: 250px;
     width: 250px;
     margin-top: 40px;
+    padding-bottom: 10px;
     border: 2px solid #e8e8e8;
     border-radius: 8px;
     transition: 200ms ease-in-out;
@@ -118,4 +119,8 @@
 
 .rand-wrapper {
     height: 45%;
+}
+
+.card-text {
+    text-align: center;
 }
