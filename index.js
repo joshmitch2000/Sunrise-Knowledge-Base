@@ -19,8 +19,13 @@ window.onload = () => {
     powerLogo.classList.add("power-logo");
     powerLogo.setAttribute("src", "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Power_icon_%28the_Noun_Project_35084%29.svg/1024px-Power_icon_%28the_Noun_Project_35084%29.svg.png");
 
+    let title1 = document.createElement("h1");
+    title1.classList.add("card-title");
+    title1.innerText = "Getting Started"
+
     imgWrap1.appendChild(powerLogo);
     card1.appendChild(imgWrap1);
+    card1.appendChild(title1);
     startOptions.appendChild(card1);
 
     // card2 contents
