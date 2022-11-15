@@ -27,7 +27,7 @@ window.onload = () => {
     let imgWrap2 = document.createElement("div");
     imgWrap2.classList.add("img-wrapper");
 
-    let emailLogo = doucment.createElement("img");
+    let emailLogo = document.createElement("img");
     emailLogo.classList.add("logo");
     emailLogo.setAttribute("src", "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Mail_%28iOS%29.svg/2048px-Mail_%28iOS%29.svg.png");
 
