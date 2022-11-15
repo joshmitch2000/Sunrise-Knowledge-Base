@@ -36,9 +36,17 @@ window.onload = () => {
     startOptions.appendChild(card2);
 
     // card3 contents
+    let imgWrap3 = document.createElement("div");
+    imgWrap3.classList.add("img-wrapper");
 
+    let randLogo = document.createElement("img");
+    randLogo.classList.add("rand-logo");
+    randLogo.setAttribute("src", "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Circle-icons-die.svg/1024px-Circle-icons-die.svg.png?20160314153600");
 
+    imgWrap3.appendChild(randLogo);
+    card3.appendChild(imgWrap3);
     startOptions.appendChild(card3);
 
+    // prepend all cards to page (add to beginning of element)
     pageCont[0].prepend(startOptions);
 }
