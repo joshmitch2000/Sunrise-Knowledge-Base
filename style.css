@@ -1,0 +1,90 @@
+/* .header {
+    background-image: url("https://sunrise.sa.edu.au/wp-content/uploads/2018/09/iStock_61996558_XXXLARGE.jpg") !important;
+    background-image: url("https://drive.google.com/uc?export=view&id=19Bi67uusZ4Sj9-wjWP1N9WzSh15tEe9m") !important;
+    background-position: center !important;
+} */
+
+.theme-theme2 .header {
+    background-position: center !important;
+}
+
+.article-overview-tiles .card-inner {
+    background: #1e2854 !important;
+    box-shadow: 0 0 8px 0 rgba(0,0,0) !important;
+    transition: 0.3s;
+}
+
+.header-wrap .company-logo img.large {
+    max-height: 200px;
+}
+
+.article-overview-tiles .card-inner {
+    border-radius: 4%;
+}
+
+.header-wrap .company-logo img {
+    max-width: 200px;
+    width: auto;
+}
+
+.theme-theme2 .article-overview-tiles .card-inner h3, .theme-theme2 .article-overview-tiles .card-inner h3 a {
+    color: #FDB813;
+}
+
+.theme-theme2 .article-overview-tiles .card-inner .sub-heading {
+    color: #ffffff;
+}
+
+.theme-theme2 .article-overview-tiles .card-inner ul li a {
+    color: #ffffff;
+    display: inline-block;
+    position: relative;
+}
+
+.article-overview-tiles .card-inner:hover {
+    box-shadow: 0 0 16px 0 rgba(0,0,0) !important;
+}
+
+.theme-theme2 .article-overview-tiles .card-inner ul li a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff;
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+}
+
+.theme-theme2 .article-overview-tiles .card-inner ul li a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.theme-theme2 .article-overview-tiles .card-inner ul li a:hover {
+    color: #ffffff
+}
+
+.article-search-container {
+    border-radius: 12px;
+}
+
+.start-options {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: 1px solid lightgrey;
+    margin-top: 40px;
+    height: 250px;
+    padding: 0 !important;
+}
+
+.option-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 250px;
+    border: 1px solid red;
+}
