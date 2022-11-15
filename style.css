@@ -115,6 +115,7 @@
 
 .email-wrapper {
     height: 40%;
+    margin-bottom: 15px;
 }
 
 .rand-wrapper {
@@ -123,6 +124,6 @@
 
 .card-text {
     text-align: center;
-    color: #b0adad;
+    color: #b0adad !important;
     padding: 0 20px;
 }
