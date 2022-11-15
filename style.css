@@ -85,5 +85,11 @@
     flex-direction: column;
     height: 100%;
     width: 250px;
-    border: 1px solid red;
+    border: 2px solid #e8e8e8;
+    border-radius: 8px;
+    transition: 500ms ease-in-out;
+}
+
+.option-card:hover {
+    transform: scale(1.1);
 }
