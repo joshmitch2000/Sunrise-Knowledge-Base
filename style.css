@@ -104,18 +104,18 @@
     padding-top: 10px;
 }
 
-.img-wrapper {
+.logo {
     height: 100%;
 }
 
-.power-logo {
+.power-wrapper {
     height: 50%;
 }
 
-.email-logo {
+.email-wrapper {
     height: 40%;
 }
 
-.rand-logo {
+.rand-wrapper {
     height: 42%;
 }

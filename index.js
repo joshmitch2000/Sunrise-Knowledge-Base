@@ -13,13 +13,13 @@ window.onload = () => {
 
     // card1 contents
     let imgWrap1 = document.createElement("div");
-    imgWrap1.classList.add("img-wrapper");
+    imgWrap1.classList.add("power-wrapper");
 
     let powerLogo = document.createElement("img");
-    powerLogo.classList.add("power-logo");
+    powerLogo.classList.add("logo");
     powerLogo.setAttribute("src", "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Power_icon_%28the_Noun_Project_35084%29.svg/1024px-Power_icon_%28the_Noun_Project_35084%29.svg.png");
 
-    let title1 = document.createElement("h1");
+    let title1 = document.createElement("h2");
     title1.classList.add("card-title");
     title1.innerText = "Getting Started"
 
@@ -30,10 +30,10 @@ window.onload = () => {
 
     // card2 contents
     let imgWrap2 = document.createElement("div");
-    imgWrap2.classList.add("img-wrapper");
+    imgWrap2.classList.add("email-wrapper");
 
     let emailLogo = document.createElement("img");
-    emailLogo.classList.add("email-logo");
+    emailLogo.classList.add("logo");
     emailLogo.setAttribute("src", "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Mail_%28iOS%29.svg/2048px-Mail_%28iOS%29.svg.png");
 
     imgWrap2.appendChild(emailLogo);
@@ -42,10 +42,10 @@ window.onload = () => {
 
     // card3 contents
     let imgWrap3 = document.createElement("div");
-    imgWrap3.classList.add("img-wrapper");
+    imgWrap3.classList.add("rand-wrapper");
 
     let randLogo = document.createElement("img");
-    randLogo.classList.add("rand-logo");
+    randLogo.classList.add("logo");
     randLogo.setAttribute("src", "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Circle-icons-die.svg/1024px-Circle-icons-die.svg.png?20160314153600");
 
     imgWrap3.appendChild(randLogo);
