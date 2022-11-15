@@ -15,9 +15,9 @@ document.getElementsByTagName("body")[0].addEventListener("load", () => {
     card.classList.add("option-card");
 
     startOptions.appendChild(card);
-    startOptions.appendChild(card);
+    startOptions.appendChild(card.cloneNode(true));
 
-    pageCont[0].appendChild(startOptions);
+    pageCont[0].prepend(startOptions);
 });
 
 
