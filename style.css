@@ -82,6 +82,7 @@
 .option-card {
     display: flex;
     flex-direction: column;
+    align-items: center;
     height: 250px;
     width: 250px;
     margin-top: 40px;

@@ -11,19 +11,24 @@ window.onload = () => {
     let card3 = document.createElement("div");
     card3.classList.add("option-card")
 
-    let imageWrapper = document.createElement("div");
-    imageWrapper.classList.add("img-wrapper");
-    let powerLogo = document.createElement("img");
-    powerLogo.classList.add("power-logo");
-    powerLogo.setAttribute("src", "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Power_icon_%28the_Noun_Project_35084%29.svg/1024px-Power_icon_%28the_Noun_Project_35084%29.svg.png");
-
-    imageWrapper.appendChild(powerLogo);
-    
-    card1.appendChild(imageWrapper);
+    // card1 contents
+    addCardContents(card1);
 
     startOptions.appendChild(card1);
     startOptions.appendChild(card2);
     startOptions.appendChild(card3);
 
     pageCont[0].prepend(startOptions);
+}
+
+function addCardContents(card) {
+    let imageWrapper = document.createElement("div");
+    imageWrapper.classList.add("img-wrapper");
+
+    let powerLogo = document.createElement("img");
+    powerLogo.classList.add("power-logo");
+    powerLogo.setAttribute("src", "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Power_icon_%28the_Noun_Project_35084%29.svg/1024px-Power_icon_%28the_Noun_Project_35084%29.svg.png");
+
+    imageWrapper.appendChild(powerLogo);
+    card.appendChild(imageWrapper);
 }
