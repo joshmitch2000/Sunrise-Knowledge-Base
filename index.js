@@ -21,11 +21,16 @@ window.onload = () => {
 
     let title1 = document.createElement("h2");
     title1.classList.add("card-title");
-    title1.innerText = "Getting Started"
+    title1.innerText = "Getting Started";
+
+    let para1 = document.createElement("p");
+    para1.classList.add("card-text");
+    para1.innerText = "Are you new to Sunrise? Click here for a helpful article."
 
     imgWrap1.appendChild(powerLogo);
     card1.appendChild(imgWrap1);
     card1.appendChild(title1);
+    card1.appendChild(para1);
     startOptions.appendChild(card1);
 
     // card2 contents
