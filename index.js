@@ -20,3 +20,5 @@ document.getElementsByTagName("body")[0].addEventListener("load", () => {
     pageCont[0].appendChild(startOptions);
 });
 
+
+// This is a test to test latest jsdelivr version
