@@ -1,4 +1,4 @@
-document.addEventListener("load", () => {
+document.getElementsByName("body")[0].addEventListener("load", () => {
     let pageCont = document.getElementsByClassName("page-container");
     
     let startOptions = document.createElement("section");
