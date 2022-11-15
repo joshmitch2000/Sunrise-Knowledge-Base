@@ -16,6 +16,12 @@ window.onload = () => {
     let powerLogo = document.createElement("img");
     powerLogo.classList.add("power-logo");
 
+    imageWrapper.appendChild(powerLogo);
+    
+    card1.appendChild(imageWrapper);
+    card2.appendChild(imageWrapper);
+    card3.appendChild(imageWrapper);
+
     startOptions.appendChild(card1);
     startOptions.appendChild(card2);
     startOptions.appendChild(card3);
