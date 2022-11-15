@@ -57,6 +57,8 @@ window.onload = () => {
 
     imgWrap2.appendChild(emailLogo);
     card2.appendChild(imgWrap2);
+    card2.appendChild(title2);
+    card2.appendChild(para2);
     startOptions.appendChild(card2);
 
     // card3 contents
