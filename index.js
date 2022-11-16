@@ -17,7 +17,7 @@ window.onload = () => {
     let card3 = document.createElement("div");
     card3.classList.add("option-card");
     card3.addEventListener('click', () => {
-        window.open(randomArticle(), "_blank");
+        window.open(randomArticle(), "_blank").focus();
     });
 
     // card1 contents
@@ -42,6 +42,7 @@ window.onload = () => {
     card1.appendChild(para1);
     startOptions.appendChild(card1);
 
+
     // card2 contents
     let imgWrap2 = document.createElement("div");
     imgWrap2.classList.add("email-wrapper");
@@ -64,6 +65,7 @@ window.onload = () => {
     card2.appendChild(para2);
     startOptions.appendChild(card2);
 
+
     // card3 contents
     let imgWrap3 = document.createElement("div");
     imgWrap3.classList.add("rand-wrapper");
@@ -72,8 +74,18 @@ window.onload = () => {
     randLogo.classList.add("logo");
     randLogo.setAttribute("src", "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Circle-icons-die.svg/1024px-Circle-icons-die.svg.png?20160314153600");
 
+    let title3 = document.createElement("h2");
+    title3.classList.add("card-title");
+    title3.innerText = "Feeling Lucky";
+
+    let para3 = document.createElement("p");
+    para3.classList.add("card-text");
+    para3.innerText = "Feeling lucky? Click here to open a random helpdesk article.";
+
     imgWrap3.appendChild(randLogo);
     card3.appendChild(imgWrap3);
+    card3.appendChild(title3);
+    card3.appendChild(para3);
     startOptions.appendChild(card3);
 
     // prepend all cards to page (add to beginning of element)
