@@ -16,6 +16,9 @@ window.onload = () => {
     });
     let card3 = document.createElement("div");
     card3.classList.add("option-card");
+    card3.addEventListener('click', () => {
+        window.open(randomArticle(), "_blank");
+    });
 
     // card1 contents
     let imgWrap1 = document.createElement("div");
@@ -75,4 +78,53 @@ window.onload = () => {
 
     // prepend all cards to page (add to beginning of element)
     pageCont[0].prepend(startOptions);
+}
+
+function randomArticle()
+{
+    let articles = [
+        "https://sunriseict-helpdesk.groovehq.com/help/my-mac-connects-to-guest-sunrise?version=latest",
+        "https://sunriseict-helpdesk.groovehq.com/help/my-mac-connects-to-sunrise-guest-macos-13-0?version=latest",
+        "https://sunriseict-helpdesk.groovehq.com/help/how-to-recover-your-sunrise-password-from-your-mac?version=latest",
+        "https://sunriseict-helpdesk.groovehq.com/help/resource-links?version=latest",
+        "https://sunriseict-helpdesk.groovehq.com/help/how-to-setup-printers-on-your-macbook-updated-221012?version=latest",
+        "https://sunriseict-helpdesk.groovehq.com/help/how-to-change-the-password-on-your-computer-macos-ventura?version=latest",
+        "https://sunriseict-helpdesk.groovehq.com/help/how-to-change-the-password-on-your-computer?version=latest",
+        "https://sunriseict-helpdesk.groovehq.com/help/how-to-change-the-batteries-on-a-salto-lock?version=latest",
+        "https://sunriseict-helpdesk.groovehq.com/help/3cx-mobile-app-fix-how-to-disable-ip-tracking-limit?version=latest",
+        "https://sunriseict-helpdesk.groovehq.com/help/how-to-scan-documents-updated-221019?version=latest",
+        "https://sunriseict-helpdesk.groovehq.com/help/using-airplay-on-your-apple-tv?version=latest",
+        "https://sunriseict-helpdesk.groovehq.com/help/how-to-solve-all-of-the-s-drive-issues?version=latest",
+        "https://sunriseict-helpdesk.groovehq.com/help/how-to-update-nextcloud?version=latest",
+        "https://sunriseict-helpdesk.groovehq.com/help/i-have-been-signed-out-of-nextcloud?version=latest",
+        "https://sunriseict-helpdesk.groovehq.com/help/new-staff-ict-guide?version=latest",
+        "https://sunriseict-helpdesk.groovehq.com/help/how-to-request-an-app?version=latest",
+        "https://sunriseict-helpdesk.groovehq.com/help/office-grant-access-and-or-insufficient-permission-error?version=latest",
+        "https://sunriseict-helpdesk.groovehq.com/help/how-to-set-your-email-signature?version=latest",
+        "https://sunriseict-helpdesk.groovehq.com/help/sunrise-self-service-password-tool-how-to-reset-my-sunrise-password?version=latest",
+        "https://sunriseict-helpdesk.groovehq.com/help/adding-a-guest-to-our-guest-sunrise-network?version=latest",
+        "https://sunriseict-helpdesk.groovehq.com/help/how-to-install-spike-as-a-sunrise-oshc-or-elc-coordinator-on-your-mac?version=latest",
+        "https://sunriseict-helpdesk.groovehq.com/help/comprehensive-guide?version=latest",
+        "https://sunriseict-helpdesk.groovehq.com/help/airdrop-from-ipad-to-macbook?version=latest",
+        "https://sunriseict-helpdesk.groovehq.com/help/salto-information?version=latest",
+        "https://sunriseict-helpdesk.groovehq.com/help/contact-details-if-any-issues-arise?version=latest",
+        "https://sunriseict-helpdesk.groovehq.com/help/accessing-clickview?version=latest",
+        "https://sunriseict-helpdesk.groovehq.com/help/install-teamviewer-for-sunrise-ict-remote-access?version=latest",
+        "https://sunriseict-helpdesk.groovehq.com/help/using-classroom-displays-and-apple-tv?version=latest",
+        "https://sunriseict-helpdesk.groovehq.com/help/3cx-welcome-email?version=latest",
+        "https://sunriseict-helpdesk.groovehq.com/help/setting-up-the-3cx-iphone-app?version=latest",
+        "https://sunriseict-helpdesk.groovehq.com/help/using-the-t19p-phone?version=latest",
+        "https://sunriseict-helpdesk.groovehq.com/help/using-the-t57w-phone?version=latest",
+        "https://sunriseict-helpdesk.groovehq.com/help/myfiles-sharing-folders-with-other-teachers?version=latest",
+        "https://sunriseict-helpdesk.groovehq.com/help/how-to-configure-the-nextcloud-myfiles-client-on-your-mac?version=latest",
+        "https://sunriseict-helpdesk.groovehq.com/help/creating-shared-folders-in-myfiles?version=latest",
+        "https://sunriseict-helpdesk.groovehq.com/help/screen-recording-on-ipad?version=latest",
+        "https://sunriseict-helpdesk.groovehq.com/help/screen-recording-with-quicktime?version=latest",
+        "https://sunriseict-helpdesk.groovehq.com/help/compressing-videos-with-quicktime?version=latest",
+        "https://sunriseict-helpdesk.groovehq.com/help/student-tips-for-participating-in-online-learning?version=latest"
+    ];
+
+    let index = Math.floor(Math.random() * ((articles.length - 1) + 1));
+    
+    return articles[index];
 }
