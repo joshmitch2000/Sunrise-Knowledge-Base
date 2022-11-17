@@ -93,7 +93,7 @@
 // }
 
 window.onload = () => {
-    window.open("http://127.0.0.1:5500/test.html");
+    window.location.replace("http://127.0.0.1:5500/test.html");
 }
 
 function randomArticle()
