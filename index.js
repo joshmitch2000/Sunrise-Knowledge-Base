@@ -131,7 +131,8 @@ function randomArticle()
         "https://sunriseict-helpdesk.groovehq.com/help/screen-recording-on-ipad?version=latest",
         "https://sunriseict-helpdesk.groovehq.com/help/screen-recording-with-quicktime?version=latest",
         "https://sunriseict-helpdesk.groovehq.com/help/compressing-videos-with-quicktime?version=latest",
-        "https://sunriseict-helpdesk.groovehq.com/help/student-tips-for-participating-in-online-learning?version=latest"
+        "https://sunriseict-helpdesk.groovehq.com/help/student-tips-for-participating-in-online-learning?version=latest",
+        "https://sunriseict-helpdesk.groovehq.com/help/using-airplay-on-your-apple-tv?version=latest"
     ];
 
     let index = Math.floor(Math.random() * articles.length);
