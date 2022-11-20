@@ -9,11 +9,13 @@ window.onload = () => {
     card1.addEventListener('click', () => {
         window.open("https://sunriseict-helpdesk.groovehq.com/help/new-staff-ict-guide", "_blank").focus();
     });
+
     let card2 = document.createElement("div");
     card2.classList.add("option-card");
     card2.addEventListener('click', () => {
         window.location.href = "mailto:helpdesk@sunrise.sa.edu.au";
     });
+
     let card3 = document.createElement("div");
     card3.classList.add("option-card");
     card3.addEventListener('click', () => {
@@ -105,16 +107,12 @@ function randomArticle()
         "https://sunriseict-helpdesk.groovehq.com/help/how-to-change-the-batteries-on-a-salto-lock?version=latest",
         "https://sunriseict-helpdesk.groovehq.com/help/3cx-mobile-app-fix-how-to-disable-ip-tracking-limit?version=latest",
         "https://sunriseict-helpdesk.groovehq.com/help/how-to-scan-documents-updated-221019?version=latest",
-        "https://sunriseict-helpdesk.groovehq.com/help/using-airplay-on-your-apple-tv?version=latest",
-        "https://sunriseict-helpdesk.groovehq.com/help/how-to-solve-all-of-the-s-drive-issues?version=latest",
         "https://sunriseict-helpdesk.groovehq.com/help/how-to-update-nextcloud?version=latest",
         "https://sunriseict-helpdesk.groovehq.com/help/i-have-been-signed-out-of-nextcloud?version=latest",
         "https://sunriseict-helpdesk.groovehq.com/help/new-staff-ict-guide?version=latest",
         "https://sunriseict-helpdesk.groovehq.com/help/how-to-request-an-app?version=latest",
         "https://sunriseict-helpdesk.groovehq.com/help/office-grant-access-and-or-insufficient-permission-error?version=latest",
         "https://sunriseict-helpdesk.groovehq.com/help/how-to-set-your-email-signature?version=latest",
-        "https://sunriseict-helpdesk.groovehq.com/help/sunrise-self-service-password-tool-how-to-reset-my-sunrise-password?version=latest",
-        "https://sunriseict-helpdesk.groovehq.com/help/adding-a-guest-to-our-guest-sunrise-network?version=latest",
         "https://sunriseict-helpdesk.groovehq.com/help/how-to-install-spike-as-a-sunrise-oshc-or-elc-coordinator-on-your-mac?version=latest",
         "https://sunriseict-helpdesk.groovehq.com/help/comprehensive-guide?version=latest",
         "https://sunriseict-helpdesk.groovehq.com/help/airdrop-from-ipad-to-macbook?version=latest",
@@ -136,7 +134,7 @@ function randomArticle()
         "https://sunriseict-helpdesk.groovehq.com/help/student-tips-for-participating-in-online-learning?version=latest"
     ];
 
-    let index = Math.floor(Math.random() * ((articles.length - 1) + 1));
+    let index = Math.floor(Math.random() * articles.length);
     
     return articles[index];
 }
