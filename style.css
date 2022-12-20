@@ -95,7 +95,7 @@
 
 .option-card:hover {
     transform: scale(1.05);
-    box-shadow: 0px 8px 32px 4px rgba(169, 168, 168, 0.75);
+    /* box-shadow: 0px 8px 32px 4px rgba(169, 168, 168, 0.75); */
 }
 
 .option-card:nth-child(2) {
