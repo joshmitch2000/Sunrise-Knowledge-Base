@@ -8,6 +8,10 @@
     background-position: center !important;
 }
 
+.theme-theme2 .overlay nav {
+    font: bold 22px/2 "IBM Plex Sans";
+}
+
 .article-overview-tiles .card-inner {
     background: #1e2854 !important;
     box-shadow: 0 0 8px 0 rgba(0,0,0) !important;
